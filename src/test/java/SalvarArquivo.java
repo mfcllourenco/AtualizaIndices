@@ -8,7 +8,8 @@ public class SalvarArquivo {
 
     public void salvarIndiceNoArquivo(Map<String, String> mapIndices) {
 
-        final String outputFilePath = "C:/Users/marco/Documents/indices.txt";
+        final String outputFilePath = System.getProperty("user.home") + "/Downloads/indices.txt";
+        System.out.println(outputFilePath.toString());
 
         File file = new File(outputFilePath);
 

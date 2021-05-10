@@ -14,9 +14,12 @@ public class ObterIndices {
 
         CorrecaoValores correcaoValores = new CorrecaoValores();
         SalvarArquivo salvarArquivo = new SalvarArquivo();
+        ObterData obterData = new ObterData();
+
+        String dataFinal = obterData.obterMesAnterior();
 
         salvarArquivo.salvarIndiceNoArquivo(
-                correcaoValores.preencherCampos("111998", "012021")
+                correcaoValores.preencherCampos("111998", dataFinal)
         );
     }
 }
